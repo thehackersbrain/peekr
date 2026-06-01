@@ -18,23 +18,29 @@ info — use htop/btop and fastfetch for those.
 
 ## Themes
 
-| Name               | Vibe              |
-|--------------------|-------------------|
-| tokyo-night ★      | default           |
-| nord               | arctic blue       |
-| dracula            | classic purple    |
-| gruvbox            | warm retro        |
-| catppuccin-frappe  | soft pastel       |
-| everforest-dark    | forest green      |
-| everforest-light   | light forest      |
-| kanagawa           | japanese ink      |
-| moonlight          | deep blue         |
-| monokai-pro        | vivid contrast    |
-| nightfox           | dark ocean        |
-| oxocarbon          | IBM carbon        |
-| zenbones-dark      | minimal dark      |
-| zenbones-light     | minimal light     |
-| cthulhain          | eldritch teal     |
+| Name              | Vibe           |
+| ----------------- | -------------- |
+| tokyo-night ★     | default        |
+| nord              | arctic blue    |
+| dracula           | classic purple |
+| gruvbox           | warm retro     |
+| catppuccin-frappe | soft pastel    |
+| everforest-dark   | forest green   |
+| everforest-light  | light forest   |
+| kanagawa          | japanese ink   |
+| moonlight         | deep blue      |
+| monokai-pro       | vivid contrast |
+| nightfox          | dark ocean     |
+| oxocarbon         | IBM carbon     |
+| zenbones-dark     | minimal dark   |
+| zenbones-light    | minimal light  |
+| cthulhain         | eldritch teal  |
+
+## Install
+
+```bash
+go install -v github.com/thehackersbrain/peekr@latest
+```
 
 ## Build
 
@@ -67,8 +73,8 @@ peekr -v                # version
 ## Keys
 
 | Key            | Action                          |
-|----------------|---------------------------------|
-| `↑/↓` or `j/k`| Navigate                        |
+| -------------- | ------------------------------- |
+| `↑/↓` or `j/k` | Navigate                        |
 | `enter`        | Select / confirm                |
 | `s`            | Search/filter connections       |
 | `tab`          | Switch pane (Both view)         |
