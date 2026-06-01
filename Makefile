@@ -1,16 +1,15 @@
 BINARY  := peekr
-CMD     := ./cmd/peekr
-VERSION := $(shell grep 'version = ' $(CMD)/main.go | grep -oP '"[^"]+"' | tr -d '"')
+VERSION := $(shell grep 'version = ' main.go | grep -oP '"[^"]+"' | tr -d '"')
 
 .PHONY: all build install clean run
 
 all: build
 
 build:
-	go build -ldflags="-s -w" -o $(BINARY) $(CMD)
+	go build -ldflags="-s -w" -o $(BINARY) .
 
 install:
-	go install $(CMD)
+	go install .
 
 run: build
 	./$(BINARY)

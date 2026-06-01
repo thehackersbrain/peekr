@@ -48,7 +48,7 @@ go install -v github.com/thehackersbrain/peekr@latest
 git clone <this repo>
 cd peekr
 go mod tidy
-go build -o peekr ./cmd/peekr
+go build -o peekr .
 
 # Install (optional)
 sudo mv peekr /usr/local/bin/
@@ -87,7 +87,7 @@ peekr -v                # version
 
 ```
 peekr/
-  cmd/peekr/main.go             entrypoint, flags
+  main.go                       entrypoint, flags
   internal/
     theme/theme.go              all 15 themes as Go structs + lipgloss Styles
     collector/collector.go      gopsutil wrappers for connections + iface stats
