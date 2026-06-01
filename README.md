@@ -39,7 +39,7 @@ info — use htop/btop and fastfetch for those.
 ## Install
 
 ```bash
-go install -v github.com/thehackersbrain/peekr@latest
+sudo GOBIN=/usr/local/bin go install github.com/thehackersbrain/peekr@latest
 ```
 
 ## Build
